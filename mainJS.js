@@ -14,3 +14,32 @@
 //10.Izsaukt funkciju_2, kas pievieno ienākumu sarakstam vertības
 //11.Izsaukt funkciju_2, kas pievieno izdevumu sarakstam vertības
 //12.Izsaukt funkciju_1, kas izmaina pieejamā budžeta vertību
+
+//1
+const ienakumi = document.getElementById('all_income').getElementsByClassName('list_item');
+console.log(ienakumi);
+
+//2
+const izdevumi = document.getElementById('all_expenses').getElementsByClassName('list_item');
+console.log(izdevumi);
+
+//3
+const budzets = document.getElementById('budget_value');
+console.log(budzets);
+
+//4
+function funkcija1() { 
+document.getElementById('budget_value').innerHTML = 200;
+}
+
+//5
+function funkcija2() { 
+ienakumi.innerHTML =   '<div class="list_item"><div class="list_description">Atvalinajums</div><div class="list_value">-300€</div></div></div>'
+
+//6
+function poga() {
+document.getElementById('add_description');
+document.getElementById('add_value');
+}
+
+//7
