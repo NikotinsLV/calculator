@@ -1,4 +1,5 @@
-//1.Nodevinēt mainīgos kurš iegūst ienākumu saraksta elemetu no html dokumenta
+
++/1.Nodevinēt mainīgos kurš iegūst ienākumu saraksta elemetu no html dokumenta
 //2.Nodevinēt mainīgos kurš iegūst izdevumu saraksta elemetu no html dokumenta
 //3.Nodevinēt mainīgos kurš iegūst pieejamā budžeta vertības elemetu no html dokumenta
 
@@ -28,18 +29,24 @@ const budzets = document.getElementById('budget_value');
 console.log(budzets);
 
 //4
-function funkcija1() { 
-document.getElementById('budget_value').innerHTML = 200;
+function funkcija1(value){
+document.getElementById('budget_value').innerHTML = value;
 }
 
 //5
-function funkcija2() { 
-ienakumi.innerHTML =   '<div class="list_item"><div class="list_description">Atvalinajums</div><div class="list_value">-300€</div></div></div>'
+function funkcija2(ienakumi,type,desc,value){
+const apraksts = document.getElementById('add_description').value;
+const summa = document.getElementById('add_value').value;
+income.innerAdjecentHTML('beforeend', apraksts + summa + '<br>');
+}
 
 //6
 function poga() {
 document.getElementById('add_description');
-document.getElementById('add_value');
+poga.addEventListener
 }
 
 //7
+function funkcija3() {
+	
+}
